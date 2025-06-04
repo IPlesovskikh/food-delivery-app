@@ -39,7 +39,7 @@ export async function getLastOrdersRestaurant(
       orderDate: orders.orderDate,
     })
     .from(orders)
-    .where(and(eq(orders.userId, userId), eq(orders.statusId, 3)))
+    .where(and(eq(orders.userId, userId), eq(orders.statusId, 1)))
     .orderBy(desc(orders.orderDate))
     .execute();
 
