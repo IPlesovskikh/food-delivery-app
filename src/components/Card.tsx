@@ -37,7 +37,7 @@ export default function Card({ restaurantData, isFavorite }: CardProps) {
           {restaurantData.name}
         </h2>
 
-        <div className="relative mx-auto mt-2 mb-1 h-[15vh] w-[80%] self-center overflow-hidden rounded-[8px] bg-contain sm:w-[80%]">
+        <div className="relative mx-auto mt-2 mb-1 h-[calc(40px+5vh)] w-[80%] self-center overflow-hidden rounded-[8px] bg-contain sm:w-[80%]">
           <Image
             src={restaurantData.imageUrl}
             sizes="85"
